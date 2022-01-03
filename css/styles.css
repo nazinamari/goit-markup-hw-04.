@@ -312,11 +312,12 @@ body {
 .team {
   background-color: #f5f4fa;
 }
-
+.team-title {
+  padding-bottom: 50px;
+}
 .team-list {
   display: flex;
   align-items: center;
-  margin-top: 50px;
   justify-content: center;
 }
 
@@ -332,9 +333,11 @@ body {
 .team-item-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -355,20 +358,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--first-text-color);
   padding-top: 10px;
+  padding-bottom: 16px;
 }
 
 .team-social-list {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
 }
 
 .team-social-item {
   width: 44px;
   height: 44px;
-}
-
-.team-social-item + .team-social-item {
-  margin-left: 10px;
 }
 
 .team-social-link {
@@ -388,6 +388,10 @@ body {
 .team-social-link:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
 }
 
 /* ------------CLIENTS------------- */
